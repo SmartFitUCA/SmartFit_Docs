@@ -12,6 +12,7 @@ steps:
   - name: build-docs
     image: node:21-alpine3.18
     commands:
+      - yarn install --frozen-lockfile
       - yarn build
 
   - name: deploy-site
