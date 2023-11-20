@@ -1,0 +1,23 @@
+kind: pipeline
+type: docker
+name: SmartFit_Docs
+
+trigger:
+    event:
+      - push
+    branch:
+      - master
+
+steps:
+  - name: build-docs
+    image: node:21-alpine3.18
+    commands:
+      - yarn build
+
+  - name: deploy-site
+    image: hub.codefirst.iut.uca.fr/maxime.batista/codefirst-docdeployer:0.2
+    settings:
+      source: build
+      target: docusaurus
+    failure: ignore
+    depends_on: [build-docs]
