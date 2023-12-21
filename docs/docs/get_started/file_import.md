@@ -16,9 +16,9 @@ sidebar_position: 3
 
     "Non lisible" -> Fichier : état primaire (Fichier FIT)
     "Non lisible" -> Bytes : contenu du fichier
-    "Lisible" -> List<Liste<dynamic>> : Type de donnée que FlutterFIt nous donne 
+    "Lisible" -> List Liste dynamic>> : Type de donnée que FlutterFIt nous donne 
     -> Traitement pour extraire les données qu'on veut 
-    "Lisible" -> List<Liste<dynamic>> : Nouvelle liste avec des bonnes données 
+    "Lisible" -> List List dynamic>> : Nouvelle liste avec des bonnes données 
     "Lisible" -> String : Transformation en CSV avec un entête 
     "Non lisible" -> Bytes : Transformation pour le transfert vers l'API
 
@@ -26,7 +26,7 @@ sidebar_position: 3
 ### Récupération d'un fichier 
 
     "Non lisible" -> Bytes : On récupere les bytes de notre fichier par l'API 
-    "Lisible " -> List<List<dynamic>> : Conversion des bytes en CSV 
+    "Lisible " -> List List dynamic>> : Conversion des bytes en CSV 
     ***Traitement du CSV***
 
 ## Classe importante 
