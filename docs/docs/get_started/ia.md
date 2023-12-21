@@ -1,5 +1,5 @@
 ---
-sidebar_title: 'AI'
+sidebar_title: '📈 AI'
 sidebar_position: 5
 ---
 
