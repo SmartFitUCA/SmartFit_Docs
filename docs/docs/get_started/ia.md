@@ -28,7 +28,7 @@ sidebar_position: 5
 
 ### Utilisation du model 
 
-    On transforme notre model en json -> {coef,intercept}
+    On transforme notre model en json -> coef,intercept 
 
     On va avoir un coef et une interception pour chaque valeur de l'activité
     (On va juste calculer le Y d'une droit)
